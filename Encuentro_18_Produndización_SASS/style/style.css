@@ -23,6 +23,7 @@ form .ctn-btn button {
 form .ctn-btn button:hover {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
+  cursor: pointer;
 }
 
 form .ctn-btn button {
@@ -68,6 +69,7 @@ form textarea {
 form > label {
   display: inline-block;
   margin: 10px 0;
+  font-size: 18px;
 }
 
 form .ctn-btn {
