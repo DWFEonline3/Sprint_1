@@ -1,0 +1,16 @@
+/*Definición de una extensión que inicia con %*/
+%button{
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #fff;
+    filter: brightness(90%);
+    /*operador &*/
+    &:hover{
+        filter: brightness(110%);
+    }
+}
+
+%button-text{
+    font-size: 14px;
+    text-transform: uppercase;
+}

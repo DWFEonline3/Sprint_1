@@ -1,0 +1,52 @@
+/*Sin anidamiento*/
+body{
+    /*Uso de variable*/
+    background: $bg-primario;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Con anidamiento*/
+form{
+    background: $bg-secundario;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid $border-primary;
+    input{
+        border-radius: 5px;
+        border: 1px solid $border-primary;
+        width: 100%;
+        padding: 10px;
+        display: block;
+        &:focus{
+            border: 1px dashed $btn-primary;
+        }
+    }
+    textarea{
+        /*Extensión de estilo de un elemento particular*/
+        @extend input;
+        resize: none;
+    }
+    /*Con especificidad de hijo directo >*/
+    >label{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .ctn-btn{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 0 0;
+        button{
+            @extend %button;
+            @extend %button-text;
+            &:first-child{
+                background: $btn-secondary;
+                margin-right: 20px;
+            }
+            &[type="submit"]{
+                background: $btn-primary;
+            }
+        }
+    }
+}

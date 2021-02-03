@@ -1,0 +1,13 @@
+:root{
+    --bg-general:rgb(26, 148, 15);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "variables";
+@import "extensiones";
+@import "principal";
+@import "media";
